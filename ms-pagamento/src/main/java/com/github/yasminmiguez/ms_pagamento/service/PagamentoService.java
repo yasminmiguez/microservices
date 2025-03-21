@@ -30,8 +30,9 @@ public class PagamentoService {
             () -> new ResourceNotFoundException("Recurso não encontrado: ID ")
     );
     return new PagamentoDTO(entity);
-    
+
     }
+
 
 
 
