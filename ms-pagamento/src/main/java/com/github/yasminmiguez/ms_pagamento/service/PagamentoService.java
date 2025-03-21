@@ -21,7 +21,11 @@ public class PagamentoService {
     public List<PagamentoDTO> getAll(){
         List<Pagamento> pagamentos = repository.findAll();
         return pagamentos.stream().map(PagamentoDTO::new).collect(Collectors.toList());
-
     }
+
+
+
+
+
 
 }
