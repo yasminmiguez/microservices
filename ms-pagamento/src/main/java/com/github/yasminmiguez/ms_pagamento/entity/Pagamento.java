@@ -32,5 +32,4 @@ public class Pagamento {
     @Column(nullable = false)
     private Long formaDePagamentoId;
 
-
 }
