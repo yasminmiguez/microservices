@@ -1,6 +1,7 @@
 package com.github.yasminmiguez.ms_pagamento.repository;
 
 import com.github.yasminmiguez.ms_pagamento.entity.Pagamento;
+import com.github.yasminmiguez.ms_pagamento.service.exceptions.ResourceNotFoundException;
 import com.github.yasminmiguez.ms_pagamento.tests.Factory;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,6 +70,8 @@ public class PagamentoRepositoryTest {
         Assertions.assertTrue(result.isEmpty());
 
     }
+
+
 
 
 
