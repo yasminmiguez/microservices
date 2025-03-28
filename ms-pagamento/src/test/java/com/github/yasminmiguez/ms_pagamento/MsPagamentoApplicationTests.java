@@ -8,6 +8,7 @@ class MsPagamentoApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
