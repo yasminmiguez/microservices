@@ -52,6 +52,24 @@ public class PagamentoRepositoryTest {
         Assertions.assertEquals(countTotalPagamento + 1, pagamento.getId());
     }
 
+    @Test
+    @DisplayName("given non-existing ID when calling findById then i should return an empty Opional")
+    public void givenAnExisting_whenCallFindById_thenReturnNonEmptyOptional() {
+
+        Optional<Pagamento> result = repository.findById(existingId);
+        Assertions.assertTrue(result.isPresent());
+
+    }
+
+    @Test
+    @DisplayName("Dado um ID não existente quando chamar findById então deve retornar um Optional vazio")
+    public void givenNonExistingId_whenCallFindById_thenReturnEmptyOptional(){
+        Optional<Pagamento> result = repository.findById(nonExistingId);
+
+        Assertions.assertTrue(result.isEmpty());
+
+    }
+
 
 
 }
